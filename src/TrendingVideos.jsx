@@ -3,7 +3,7 @@ import './HomeVideos.css';
 import VideoCard from './VideoCard';
 import SkeletonLoader from './SkeletonLoader';
 
-function RecommendedVideos() {
+function TrendingVideos() {
 	const [page, setPage] = useState(1);
 	const [videos, setVideos] = useState([]);
 	const [loading, setLoading] = useState(false);
@@ -15,7 +15,7 @@ function RecommendedVideos() {
 
 			try {
 				const response = await fetch(
-					`http://localhost:3000/videos?_page=${page}&_limit=5`
+					`http://localhost:3000/videos?_page=${page}&_sort=-viewsCount&_limit=5`
 				);
 
 				if (!response.ok) {
@@ -69,7 +69,7 @@ function RecommendedVideos() {
 
 	return (
 		<div className='homeVideos'>
-			<h2>Recommended</h2>
+			<h2>Trending</h2>
 			<div className='homeVideoItem'>
 				{videos.map((item) => {
 					return (
@@ -90,4 +90,4 @@ function RecommendedVideos() {
 	);
 }
 
-export default RecommendedVideos;
+export default TrendingVideos;

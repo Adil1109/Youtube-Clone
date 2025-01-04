@@ -1,9 +1,18 @@
+import { Link } from 'react-router-dom';
 import './VideoCard.css';
 // import Avatar from '@mui/material/Avatar';
 
-function VideoCard({ image, title, channel, views, timestamp, channelImage }) {
+function VideoCard({
+	image,
+	title,
+	channel,
+	views,
+	timestamp,
+	channelImage,
+	path,
+}) {
 	return (
-		<div className='videoCard'>
+		<Link className='videoCard' style={{ textDecoration: 'none' }} to={path}>
 			<img className='videoCardImage' src={image} alt='' />
 			<div className='videoCardInfo'>
 				<img className='videoCardAvatar' alt={channel} src={channelImage} />
@@ -15,7 +24,7 @@ function VideoCard({ image, title, channel, views, timestamp, channelImage }) {
 					</p>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
 

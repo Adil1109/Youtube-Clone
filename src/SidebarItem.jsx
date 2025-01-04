@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import './SidebarItem.css';
 
-function SidebarRow({ selected, Icon, title }) {
+function SidebarRow({ selected, Icon, title, path }) {
 	return (
-		<div className={`sidebarRow ${selected && 'selected'}`}>
+		<Link to={path} className={`sidebarRow ${selected && 'selected'}`}>
 			<Icon className='sidebarRow__icon' />
 			<h2 className='sidebarRow__title'>{title}</h2>
-		</div>
+		</Link>
 	);
 }
 

@@ -1,6 +1,8 @@
 .sidebar {
-	flex: 0.22;
+	min-width: 250px;
 	padding-top: 10px;
+	background: #fff;
+	height: 100vh;
 }
 
 .sidebar > hr {
@@ -9,4 +11,11 @@
 	background-color: lightgray;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		z-index: 1000;
+		position: fixed;
+	}
 }

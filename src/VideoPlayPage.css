@@ -1,7 +1,155 @@
+.playPageContainer {
+	display: flex;
+}
+.playPage {
+	padding-left: 7px;
+	padding-right: 7px;
+}
 .playerContainer {
-	margin-left: 15px;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 765px;
+	aspect-ratio: 16/9;
 }
 
 .player {
 	border-radius: 10px;
+}
+.infos {
+	width: 765px;
+}
+.channelCover {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.channelInfo {
+	display: flex;
+	margin-top: 10px;
+	padding-right: 30px;
+}
+
+.channelAvatar {
+	height: 40px;
+	width: 40px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.channelText {
+	margin-left: 15px;
+}
+
+.channelText > h4 {
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #222;
+}
+
+.channelText > p {
+	font-size: 14px;
+	color: gray;
+}
+
+.sbsBtn {
+	color: rgb(194, 22, 22);
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+/* Comment Section Container */
+.commentsSection {
+	width: 100%;
+}
+
+/* Header */
+.commentsHeader {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	color: #333;
+}
+
+/* Input Section */
+.commentInput {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.commentBox {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	resize: none;
+	min-height: 80px;
+	background-color: #fefefe;
+}
+
+/* Comments List */
+.commentsList {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+/* Individual Comment */
+.comment {
+	display: flex;
+	gap: 1rem;
+}
+
+.commentContent {
+	flex: 1;
+}
+
+.userName {
+	font-weight: bold;
+	color: #555;
+	margin-bottom: 0.5rem;
+}
+
+.commentText {
+	font-size: 0.95rem;
+	color: #333;
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+.commentActions {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.85rem;
+	color: #0073e6;
+	cursor: pointer;
+}
+
+.commentActions span:hover {
+	text-decoration: underline;
+}
+
+.svCardContainer {
+	margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+	.playerContainer {
+		width: 94vw;
+	}
+	.infos {
+		width: 94vw;
+	}
+	.svCardContainer {
+		display: none;
+	}
 }

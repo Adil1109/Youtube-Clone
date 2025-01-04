@@ -1,0 +1,59 @@
+.skeletonLoader {
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+	width: 300px;
+	animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+.skeletonThumbnail {
+	width: 100%;
+	height: 180px;
+	background: #ddd;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.skeletonContent {
+	display: flex;
+	align-items: center;
+}
+
+.skeletonChannelImage {
+	width: 36px;
+	height: 36px;
+	background: #ddd;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.skeletonText {
+	flex: 1;
+}
+
+.skeletonTitle {
+	width: 80%;
+	height: 14px;
+	background: #ddd;
+	border-radius: 4px;
+	margin-bottom: 6px;
+}
+
+.skeletonSubtitle {
+	width: 60%;
+	height: 12px;
+	background: #ddd;
+	border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: #e0e0e0;
+	}
+	50% {
+		background-color: #f0f0f0;
+	}
+	100% {
+		background-color: #e0e0e0;
+	}
+}

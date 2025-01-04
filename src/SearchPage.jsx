@@ -28,7 +28,7 @@ function SearchPage() {
 				channelImage='https://lh3.googleusercontent.com/ogw/ADGmqu9w_Cw19wmoiSvUJ_XYlA3xZLXal_-a8Ja3Z6UG-A=s83-c-mo'
 				description='In this video we are gonna learn how to make a text small in a webpage using html small tag, we will learn how make a text big using big tag..'
 				channel='Md Adil Hossain'
-				image='https://i.ytimg.com/an_webp/ogKgRorhxNM/mqdefault_6s.webp?du=3000&sqp=CMyTmYIG&rs=AOn4CLDhn6v2tLbUkfoEfH4vuNMFwglIjg'
+				image='https://media.istockphoto.com/id/157639696/photo/purple-space-stars.jpg?s=612x612&w=0&k=20&c=fkLtGZxUS9UPlLJUTeGjvvURT0u-vtxvj5sAYbDNrH4='
 			/>
 		</div>
 	);

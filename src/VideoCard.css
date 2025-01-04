@@ -1,5 +1,5 @@
 .videoCard {
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 	width: 280px;
 }
 .videoCardImage {
@@ -34,4 +34,14 @@
 	width: 30px;
 	object-fit: cover;
 	border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+	.videoCard {
+		width: 100%;
+	}
+	.videoCardImage {
+		height: auto;
+		width: 100%;
+	}
 }

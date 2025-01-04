@@ -1,6 +1,6 @@
 import './SearchedVideoCard.css';
 
-function VideoRow({
+function SearchedVideoCard({
 	views,
 	subs,
 	description,
@@ -28,4 +28,4 @@ function VideoRow({
 	);
 }
 
-export default VideoRow;
+export default SearchedVideoCard;

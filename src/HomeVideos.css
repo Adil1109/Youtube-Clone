@@ -14,3 +14,8 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+	.homeVideos {
+		flex: 1;
+	}
+}
